@@ -1,0 +1,201 @@
+<svg viewBox="0 0 1400 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow3">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#10b981"/>
+    </marker>
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowheadPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#8b5cf6"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="1100" fill="url(#bgGrad3)"/>
+  
+  <!-- Title -->
+  <text x="700" y="50" font-family="system-ui, sans-serif" font-size="36" font-weight="bold" fill="#10b981" text-anchor="middle">
+    ApexORCA.io — Data Flow Architecture
+  </text>
+  
+  <!-- User -->
+  <rect x="50" y="100" width="200" height="100" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="150" y="135" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#10b981" text-anchor="middle">User</text>
+  <text x="150" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Browser</text>
+  <text x="150" y="180" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Customer</text>
+  
+  <!-- Next.js Frontend -->
+  <rect x="300" y="100" width="250" height="200" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="425" y="135" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#3b82f6" text-anchor="middle">Next.js 15 Frontend</text>
+  
+  <rect x="320" y="150" width="210" height="30" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="425" y="170" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Marketplace Page</text>
+  
+  <rect x="320" y="190" width="210" height="30" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="425" y="210" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Dashboard Page</text>
+  
+  <rect x="320" y="230" width="210" height="30" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="425" y="250" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">Playbook Page</text>
+  
+  <!-- API Routes -->
+  <rect x="600" y="100" width="300" height="200" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="750" y="135" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#8b5cf6" text-anchor="middle">API Routes</text>
+  
+  <rect x="620" y="150" width="260" height="30" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="750" y="170" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">/api/stripe/checkout</text>
+  
+  <rect x="620" y="190" width="260" height="30" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="750" y="210" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">/api/stripe/webhook</text>
+  
+  <rect x="620" y="230" width="260" height="30" rx="5" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+  <text x="750" y="250" font-family="system-ui, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle">/api/purchases</text>
+  
+  <!-- Stripe -->
+  <rect x="950" y="100" width="200" height="200" rx="10" fill="#1e293b" stroke="#635bff" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="1050" y="135" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#635bff" text-anchor="middle">Stripe</text>
+  <text x="1050" y="165" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Payment Gateway</text>
+  <text x="1050" y="190" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Checkout Sessions</text>
+  <text x="1050" y="215" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Webhooks</text>
+  <text x="1050" y="240" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">One-time Payments</text>
+  <text x="1050" y="265" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Product Metadata</text>
+  
+  <!-- Supabase -->
+  <rect x="1200" y="100" width="150" height="200" rx="10" fill="#1e293b" stroke="#3ecf8e" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="1275" y="135" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#3ecf8e" text-anchor="middle">Supabase</text>
+  <text x="1275" y="165" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">PostgreSQL</text>
+  <rect x="1210" y="180" width="130" height="100" rx="5" fill="#0f172a" stroke="#3ecf8e" stroke-width="1"/>
+  <text x="1275" y="205" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#3ecf8e" text-anchor="middle">purchases table</text>
+  <text x="1275" y="225" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">• id (UUID)</text>
+  <text x="1275" y="240" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">• product_id</text>
+  <text x="1275" y="255" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">• user_email</text>
+  <text x="1275" y="270" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">• purchased_at</text>
+  
+  <!-- Purchase Flow -->
+  <rect x="50" y="350" width="1300" height="400" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="700" y="385" font-family="system-ui, sans-serif" font-size="20" font-weight="bold" fill="#10b981" text-anchor="middle">Purchase Flow (Current Implementation)</text>
+  
+  <!-- Step 1 -->
+  <rect x="100" y="410" width="180" height="200" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+  <circle cx="190" cy="440" r="15" fill="#10b981"/>
+  <text x="190" y="447" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0a0a0a" text-anchor="middle">1</text>
+  <text x="190" y="470" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">User Clicks</text>
+  <text x="190" y="490" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">"Buy Now"</text>
+  <text x="190" y="520" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Product: playbook</text>
+  <text x="190" y="540" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Product: persona</text>
+  <text x="190" y="560" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Product: skill</text>
+  <text x="190" y="580" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Price: $39-$129</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="280" y1="510" x2="320" y2="510" stroke="#10b981" stroke-width="3" marker-end="url(#arrowhead2)"/>
+  
+  <!-- Step 2 -->
+  <rect x="320" y="410" width="180" height="200" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="410" cy="440" r="15" fill="#3b82f6"/>
+  <text x="410" y="447" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0a0a0a" text-anchor="middle">2</text>
+  <text x="410" y="470" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">Frontend Calls</text>
+  <text x="410" y="490" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">API</text>
+  <text x="410" y="520" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">POST /api/stripe/</text>
+  <text x="410" y="540" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">checkout</text>
+  <text x="410" y="560" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Body: {productId}</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="500" y1="510" x2="620" y2="510" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Step 3 -->
+  <rect x="620" y="410" width="180" height="200" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/>
+  <circle cx="710" cy="440" r="15" fill="#8b5cf6"/>
+  <text x="710" y="447" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0a0a0a" text-anchor="middle">3</text>
+  <text x="710" y="470" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">API Creates</text>
+  <text x="710" y="490" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">Stripe Session</text>
+  <text x="710" y="520" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">stripe.checkout.</text>
+  <text x="710" y="540" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">sessions.create()</text>
+  <text x="710" y="560" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Metadata: productId</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="800" y1="510" x2="950" y2="510" stroke="#8b5cf6" stroke-width="3" marker-end="url(#arrowheadPurple)"/>
+  
+  <!-- Step 4 -->
+  <rect x="950" y="410" width="180" height="200" rx="8" fill="#0f172a" stroke="#635bff" stroke-width="2"/>
+  <circle cx="1040" cy="440" r="15" fill="#635bff"/>
+  <text x="1040" y="447" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="1040" y="470" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#635bff" text-anchor="middle">Stripe Processes</text>
+  <text x="1040" y="490" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#635bff" text-anchor="middle">Payment</text>
+  <text x="1040" y="520" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">User pays</text>
+  <text x="1040" y="540" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Card payment</text>
+  <text x="1040" y="560" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">One-time</text>
+  
+  <!-- Arrow 4 (Webhook) -->
+  <line x1="1040" y1="610" x2="1040" y2="750" stroke="#635bff" stroke-width="3" marker-end="url(#arrowheadPurple)"/>
+  
+  <!-- Step 5 (Webhook) -->
+  <rect x="950" y="750" width="180" height="110" rx="8" fill="#0f172a" stroke="#635bff" stroke-width="2"/>
+  <circle cx="1040" cy="775" r="12" fill="#635bff"/>
+  <text x="1040" y="782" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="1040" y="800" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#635bff" text-anchor="middle">Webhook Event</text>
+  <text x="1040" y="820" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">checkout.session.completed</text>
+  <text x="1040" y="840" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">Stripe → API</text>
+  <text x="1040" y="855" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">(Async callback)</text>
+  
+  <!-- Arrow 5 (Webhook to API) -->
+  <line x1="950" y1="805" x2="620" y2="805" stroke="#635bff" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowheadPurple)"/>
+  
+  <!-- Step 6 (API receives webhook) -->
+  <rect x="620" y="750" width="180" height="110" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/>
+  <circle cx="710" cy="775" r="12" fill="#8b5cf6"/>
+  <text x="710" y="782" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+  <text x="710" y="800" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#8b5cf6" text-anchor="middle">API Webhook</text>
+  <text x="710" y="820" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">/api/stripe/webhook</text>
+  <text x="710" y="840" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">console.log()</text>
+  <text x="710" y="855" font-family="system-ui, sans-serif" font-size="9" fill="#ef4444" text-anchor="middle">(No DB save)</text>
+  
+  <!-- Note: /api/purchases exists but not called -->
+  <rect x="820" y="750" width="100" height="110" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  <text x="870" y="775" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#64748b" text-anchor="middle">/api/purchases</text>
+  <text x="870" y="795" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">(Route exists</text>
+  <text x="870" y="810" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">but not</text>
+  <text x="870" y="825" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">called in</text>
+  <text x="870" y="840" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">current flow)</text>
+  
+  <!-- Supabase note - not being written -->
+  <rect x="1200" y="750" width="150" height="110" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  <text x="1275" y="775" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">Supabase</text>
+  <text x="1275" y="795" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">(Not written</text>
+  <text x="1275" y="810" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">in current</text>
+  <text x="1275" y="825" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">implementation.</text>
+  <text x="1275" y="840" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Schema: id,</text>
+  <text x="1275" y="855" font-family="system-ui, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">product_id, email, date)</text>
+  
+  <!-- Arrow 7 (Redirect) -->
+  <line x1="1040" y1="410" x2="1040" y2="350" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrowhead2)"/>
+  <line x1="1040" y1="350" x2="150" y2="350" stroke="#10b981" stroke-width="2" stroke-dasharray="3,3" marker-end="url(#arrowhead2)"/>
+  
+  <!-- Step 8 (Success Page) -->
+  <rect x="100" y="300" width="180" height="40" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+  <text x="190" y="325" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#10b981" text-anchor="middle">8. Redirect to /success</text>
+  
+  <!-- Dashboard Data Flow -->
+  <rect x="50" y="870" width="400" height="100" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="250" y="900" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#f59e0b" text-anchor="middle">Dashboard Data Flow</text>
+  <text x="250" y="925" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Frontend → /api/dashboard/stats → Mock Data (Revenue, Treasury, Decisions)</text>
+  <text x="250" y="945" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Base Chain → /api/monitor → Health Status</text>
+  
+  <!-- Implementation Note -->
+  <rect x="500" y="870" width="850" height="100" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow3)"/>
+  <text x="925" y="895" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#f59e0b" text-anchor="middle">Current Implementation Status</text>
+  <text x="925" y="920" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">✓ Webhook receives events and logs only (no database persistence)</text>
+  <text x="925" y="940" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">✓ /api/purchases route exists but requires: productId, userEmail, sessionId, amount</text>
+  <text x="925" y="955" font-family="system-ui, sans-serif" font-size="11" fill="#ef4444" text-anchor="middle">⚠ Schema mismatch: purchases table has (id, product_id, user_email, purchased_at) — missing session_id, amount</text>
+  
+  <!-- Footer -->
+  <text x="700" y="1090" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">
+    © 2026 ApexORCA.io — All rights reserved. Founder: B.W. Moore
+  </text>
+</svg>
