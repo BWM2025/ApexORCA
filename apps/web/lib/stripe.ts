@@ -1,9 +1,25 @@
 import Stripe from "stripe";
 import { getAllProductSlugs } from "@/lib/products";
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-06-20",
-});
+// Lazy init so Vercel build (env often not set) does not throw
+let _stripe: Stripe | null = null;
+export function getStripe(): Stripe {
+  if (!_stripe) {
+    const key = process.env.STRIPE_SECRET_KEY;
+    if (!key) throw new Error("STRIPE_SECRET_KEY is not set");
+    _stripe = new Stripe(key, { apiVersion: "2024-06-20" });
+  }
+  return _stripe;
+}
+/** Use getStripe() in API routes. Kept for backward compatibility; lazy-initialized. */
+export const stripe = {
+  get checkout() {
+    return getStripe().checkout;
+  },
+  get webhooks() {
+    return getStripe().webhooks;
+  },
+};
 
 // TEMPORARY: Test Price IDs for zero-real-money test. Switch back to Live IDs for production.
 export const priceMap: Record<string, string> = {
