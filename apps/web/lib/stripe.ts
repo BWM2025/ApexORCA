@@ -1,20 +1,26 @@
 import Stripe from "stripe";
+import { getAllProductSlugs } from "@/lib/products";
 
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20",
 });
 
-const priceMap: Record<string, string> = {
-  playbook: "price_1QTestPlaybook123",
-  "ceo-pod": "price_1QTestCEOPod456",
-  "marketing-pod": "price_1QTestMarketingPod457",
-  "technical-pod": "price_1QTestTechnicalPod458",
-  "operations-pod": "price_1QTestOperationsPod463",
-  "governance-booster": "price_1QTestGovernance459",
-  "x-growth": "price_1QTestXGrowth460",
-  "sentry-pro": "price_1QTestSentry461",
-  "aeo-booster": "price_1QTestAEOBooster462",
+export const priceMap: Record<string, string> = {
+  playbook:           "price_1XXXXXXXXXXXXXXXXXXXXXXXX",   // ← TODO: Paste the real Playbook Price ID here
+  "ceo-pod":          "price_1T4AN3B7fHGes7w86e1W5Khz",
+  "marketing-pod":    "price_1T4AO0B7fHGes7w8WufKaSh8",
+  "technical-pod":    "price_1T4AOqB7fHGes7w8OVwaSneJ",
+  "operations-pod":   "price_1T4APkB7fHGes7w8u2uIKDnz",
+  "governance-booster":"price_1T4AQRB7fHGes7w8o32woLuS",
+  "growth-engine":    "price_1T4ARZB7fHGes7w8IWYSLaq6",
+  "pod-os":           "price_1T5CjSB7fHGes7w8NVSScX3e",
 };
+
+const slugs = getAllProductSlugs();
+const missing = slugs.filter((id) => !priceMap[id]);
+if (missing.length > 0) {
+  console.warn("[stripe] Missing Price IDs for:", missing.join(", "));
+}
 
 export async function createCheckoutSession(productId: string) {
   const session = await stripe.checkout.sessions.create({
