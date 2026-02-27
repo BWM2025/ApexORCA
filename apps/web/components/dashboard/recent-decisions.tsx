@@ -44,7 +44,7 @@ export default function RecentDecisions() {
       <CardHeader>
         <CardTitle className="flex items-center gap-3">
           <Clock className="h-6 w-6" />
-          Live Governance Log — Apex Pod
+          Live Governance Log — [Your Pod]
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 text-sm">

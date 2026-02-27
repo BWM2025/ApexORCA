@@ -1,5 +1,6 @@
 import LiveRevenue from "@/components/dashboard/live-revenue";
 import TreasuryCard from "@/components/dashboard/treasury-card";
+import BiggieTreasury from "@/components/dashboard/biggie-treasury";
 import RecentDecisions from "@/components/dashboard/recent-decisions";
 import RevenueChart from "@/components/dashboard/revenue-chart";
 
@@ -22,6 +23,7 @@ export default function DashboardPage() {
         </div>
         <div className="md:col-span-4 space-y-6">
           <TreasuryCard />
+          <BiggieTreasury />
           <RecentDecisions />
         </div>
       </div>

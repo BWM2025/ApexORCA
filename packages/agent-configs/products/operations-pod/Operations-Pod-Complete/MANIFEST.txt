@@ -1,0 +1,28 @@
+Operations-Pod-Complete/
+├── README.md
+├── INSTALL.md
+├── setup.sh
+├── Operations-Lead/
+│   ├── IDENTITY.md
+│   ├── SOUL.md
+│   ├── MEMORY.md
+│   ├── HEARTBEAT.md
+│   ├── RHYTHMS.md
+│   ├── SAFETY.md
+│   ├── TOOLS.md
+│   └── FULFILLMENT_CHECKLIST.md
+├── Shared/
+│   ├── REVERSIBILITY_TIERS.md
+│   ├── DAILY_REPORT_FORMAT.md
+│   └── VETO_PROTOCOL.md
+├── Diagrams/
+│   └── README.md
+│   (figure-1-three-component-merge.png, figure-6-pod-architecture.png, figure-8-growth-flywheel.png — added at build)
+├── Quickstart/
+│   ├── FOUNDER_RULES.md
+│   └── EXAMPLE_SHORT_MANDATES.md
+├── LICENSE.md
+└── MANIFEST.txt (this file)
+
+Full file list for transparency. Total size ~170 KB (without diagram PNGs).
+© 2026 ApexORCA.io — All rights reserved.

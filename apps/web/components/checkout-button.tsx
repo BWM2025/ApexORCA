@@ -13,14 +13,24 @@ export default function CheckoutButton({ productId, children, className }: Check
 
   const handleCheckout = async () => {
     setLoading(true);
-    const res = await fetch("/api/stripe/checkout", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ productId }),
-    });
-    const data = await res.json();
-    if (data.url) window.location.href = data.url;
-    setLoading(false);
+    try {
+      const res = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.url) {
+        window.location.href = data.url;
+        return;
+      }
+      const msg = data.error || (res.status === 404 ? "Checkout endpoint not found. Please redeploy." : "Checkout failed. Try again.");
+      alert(msg);
+    } catch (e) {
+      alert("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

@@ -1,20 +1,25 @@
 /**
  * Generate quickstart ZIP for customers.
  * Run from repo root: npx tsx scripts/generate-quickstart-zip.ts
+ * Output: apps/web/public/downloads/quickstart.zip (same as playbook PDF and product ZIPs).
  * Requires: npm i -D archiver
  */
 import { createWriteStream, mkdirSync } from "fs";
-import { dirname } from "path";
+import { join, dirname } from "path";
+
+const ROOT = process.cwd();
+const OUT_DIR = join(ROOT, "apps", "web", "public", "downloads");
 
 async function generateQuickstart() {
   try {
     const archiver = await import("archiver");
-    const outPath = "public/downloads/quickstart.zip";
+    const outPath = join(OUT_DIR, "quickstart.zip");
     mkdirSync(dirname(outPath), { recursive: true });
     const output = createWriteStream(outPath);
     const archive = archiver.default("zip", { zlib: { level: 9 } });
     archive.pipe(output);
-    archive.directory("packages/agent-configs/quickstart", false);
+    archive.directory(join(ROOT, "packages", "agent-configs", "quickstart"), false);
+    archive.file(join(ROOT, "docs", "LLM_PROVIDER_SETUP_GUIDE.md"), { name: "LLM_PROVIDER_SETUP_GUIDE.md" });
     archive.finalize();
     await new Promise<void>((resolve, reject) => {
       output.on("close", () => resolve());

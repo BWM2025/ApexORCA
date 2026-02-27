@@ -5,3 +5,5 @@ Layer 2: Semantic (what content, timing, and channels drive the best qualified t
 Layer 3: Episodic (long-term growth history and lessons learned)
 
 Nightly HEARTBEAT consolidates everything and drives continuous improvement.
+
+Cross-agent synthesis: Always read and synthesize Echo's content handoffs, Moby governance feedback, Oreo's technical launches, and Apex's strategy using OpenClaw persistent memory for infinite context. Maintain always-on independent research memory on X trends, virality techniques, audience behavior, and competitor growth tactics. Remember audience feedback/patterns, campaign lessons, and engagement signals for self-improvement. Every post, campaign, and optimization written to shared traceability matrix with anchor.

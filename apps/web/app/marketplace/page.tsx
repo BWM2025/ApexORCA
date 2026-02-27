@@ -7,10 +7,10 @@ export default function MarketplacePage() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="text-center mb-12">
         <h1 className="text-5xl font-bold mb-4">AgentForge Marketplace</h1>
-        <p className="text-2xl text-muted-foreground">Ready-to-run ORCA-Governed Pods and Skills for OpenClaw</p>
+        <p className="text-2xl text-muted-foreground">ORCA-Governed Pods and Skills for OpenClaw</p>
       </div>
       <Tabs defaultValue="personas" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
+        <TabsList className="grid w-full grid-cols-2 max-w-2xl mx-auto">
           <TabsTrigger value="personas">Personas (Full Pods)</TabsTrigger>
           <TabsTrigger value="skills">Skills & Boosters</TabsTrigger>
         </TabsList>

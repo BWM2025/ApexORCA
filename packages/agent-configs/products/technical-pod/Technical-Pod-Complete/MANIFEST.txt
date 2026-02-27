@@ -1,0 +1,28 @@
+Technical-Pod-Complete/
+├── README.md
+├── INSTALL.md
+├── setup.sh
+├── Technical-Lead/
+│   ├── IDENTITY.md
+│   ├── SOUL.md
+│   ├── MEMORY.md
+│   ├── HEARTBEAT.md
+│   ├── RHYTHMS.md
+│   ├── SAFETY.md
+│   ├── TOOLS.md
+│   └── PRE_DEPLOY_CHECKLIST.md
+├── Shared/
+│   ├── REVERSIBILITY_TIERS.md
+│   ├── DAILY_REPORT_FORMAT.md
+│   └── VETO_PROTOCOL.md
+├── Diagrams/
+│   └── README.md
+│   (figure-1-three-component-merge.png, figure-3-three-layer-memory-stack.png, figure-5-reversibility-tiers.png, figure-7-overnight-build-workflow.png — added at build)
+├── Quickstart/
+│   ├── FOUNDER_RULES.md
+│   └── EXAMPLE_SHORT_MANDATES.md
+├── LICENSE.md
+└── MANIFEST.txt (this file)
+
+Full file list for transparency. Total size ~172 KB (without diagram PNGs).
+© 2026 ApexORCA.io — All rights reserved.

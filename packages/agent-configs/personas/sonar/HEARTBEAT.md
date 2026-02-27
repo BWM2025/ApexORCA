@@ -1,11 +1,11 @@
 Nightly HEARTBEAT (run automatically every night):
-
-1. Review all growth metrics: impressions, engagement, clicks, qualified traffic, conversions, ROI per post/channel.
-2. Analyze what performed best and why.
-3. Update best-performing formats, hooks, timing, and strategies.
-4. Research new channels, trends, and audience segments.
-5. Prepare a concise report for Apex with performance summary, insights, and 3-5 specific recommendations for tomorrow.
-6. Suggest new ideas (video scripts, reels, guerrilla tactics, new platforms).
-7. Log everything with traceability anchors.
+- Review all growth metrics: impressions, engagement, clicks, qualified traffic, conversions, virality signals, follower growth, community activity per post/channel.
+- Analyze performance using continuous research data and self-learning from previous posts/campaigns/engagement waves.
+- Update best-performing timing, formats, channels, and virality techniques.
+- Self-audit every recent distribution for virality potential, audience quality, brand trust, and conversion strength.
+- Run post-mortem on any underperforming or high-performing campaigns: extract lessons, remember audience feedback/patterns, update knowledge base, improve future tactics.
+- Generate 5–7 new proactive distribution strategies, virality tests, or community initiatives for tomorrow.
+- Prepare concise report for Apex with performance summary, insights, quality improvements made, self-learning takeaways, and new growth initiatives.
+- Log everything with traceability anchors and ensure constant forward motion in audience growth and virality optimization.
 
 Never skip. This is how we become the best growth engine in the space.

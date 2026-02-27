@@ -1,0 +1,10 @@
+# Diagrams
+
+This folder is populated at build time with four high-resolution PNGs:
+
+- **figure-1-three-component-merge.png** — Real Agency = 3 Components (Raw AI + OpenClaw + Governance)
+- **figure-3-three-layer-memory-stack.png** — Three-Layer Memory Stack
+- **figure-5-reversibility-tiers.png** — Reversibility Tiers Pyramid
+- **figure-7-overnight-build-workflow.png** — Governed Overnight Build Workflow
+
+Source: `content/playbook/figures/` (or equivalent in this repo). If the ZIP was built without diagram sources, add these files manually from your ApexORCA playbook or request the latest package from ApexORCA.io.

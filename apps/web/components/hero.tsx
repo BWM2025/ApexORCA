@@ -19,6 +19,9 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 mb-6 bg-white/10 rounded-full px-4 py-1 text-sm">
           <Award className="h-4 w-4 text-[#00E5FF]" /> Based on real orca research
         </div>
+        <div className="inline-flex items-center gap-2 mb-6 bg-white/10 rounded-full px-4 py-1 text-sm">
+          <span className="text-[#00E5FF]">✓ Zero API cost option (Claude Pro or LM Studio)</span>
+        </div>
         <h1 className="text-7xl font-bold tracking-tighter mb-6">
           Apex Intelligence
           <br />

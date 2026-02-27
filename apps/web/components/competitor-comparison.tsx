@@ -2,7 +2,7 @@ import { Check, X } from "lucide-react";
 import React from "react";
 
 const features = [
-  { feature: "Sells ready-to-run AI employees as downloadable products", apex: true, felixcraft: true, crewai: false, autogpt: false, langchain: false },
+  { feature: "Sells AI employees as downloadable products", apex: true, felixcraft: true, crewai: false, autogpt: false, langchain: false },
   { feature: "ORCA Governance DNA (phase-locked execution, zero-drift memory, self-audit)", apex: true, felixcraft: false, crewai: false, autogpt: false, langchain: false },
   { feature: "Public live revenue dashboard showing real operations", apex: true, felixcraft: true, crewai: false, autogpt: false, langchain: false },
   { feature: "Dedicated governance auditor agent with veto power", apex: true, felixcraft: false, crewai: false, autogpt: false, langchain: false },
@@ -71,7 +71,7 @@ export default function CompetitorComparison() {
 
       <div className="mt-12 p-6 bg-[#0A1421] rounded-2xl border border-[#00E5FF]/20">
         <p className="text-center text-sm text-[#A1AAB8] mb-2">
-          <span className="text-[#00E5FF] font-semibold">ApexORCA</span> sells ready-to-run AI employees as downloadable products (CEO Pod $129, Marketing Pod $59, Technical Pod $79, Operations Pod $99). <span className="text-white">FelixCraft.ai</span> also sells templates; <span className="text-white">CrewAI, Auto-GPT, and LangChain</span> are frameworks that require you to build and maintain your own agents.
+          <span className="text-[#00E5FF] font-semibold">ApexORCA</span> sells AI employees as downloadable products (CEO Pod $129, Marketing Pod $59, Technical Pod $79, Operations Pod $99). <span className="text-white">FelixCraft.ai</span> showed what&apos;s possible — we built the version with real ORCA Governance DNA; <span className="text-white">CrewAI, Auto-GPT, and LangChain</span> are frameworks that require you to build and maintain your own agents.
         </p>
         <p className="text-center text-xs text-muted-foreground mt-2">
           <span className="text-[#00E5FF]">ORCA Governance DNA™</span> (phase-locked execution, zero-drift memory, self-audit) is the reliability layer built into every ApexORCA product. Comparison verified against public documentation as of February 2026.

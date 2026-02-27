@@ -1,5 +1,15 @@
 # Run ApexORCA.io locally
 
+## Recommended LLM for this site builder
+
+Grok via xAI API + your existing SuperGrok subscription.
+
+1. Go to console.x.ai → create API key.
+2. Run `openclaw configure` and add the Grok API key.
+Expected cost: SuperGrok $30/month + token usage (~$10–40/month for moderate development with short mandates).
+
+---
+
 **Node:** Next.js 15 needs **Node 18+**. Use Node 20: `nvm use 20` (or install nvm + Node 20 first).
 
 **From Cursor (easiest):**
@@ -13,4 +23,4 @@ export NVM_DIR="$HOME/.nvm"; . "$NVM_DIR/nvm.sh"; nvm use 20; cd apps/web && npm
 ```
 Then in Cursor: **Simple Browser: Show** → **http://localhost:3000**.
 
-`npm run dev` is set to free port 3000 and always start on **http://localhost:3000** so Cursor’s embedded browser finds the app.
+`npm run dev` is set to free port 3000 and always start on **http://localhost:3000** so Cursor's embedded browser finds the app.

@@ -27,7 +27,7 @@ Sonar owns all X posting, scheduling, timing optimization, engagement monitoring
 **First Post on Launch Day**  
 Just launched @ApexORCA 🐋
 
-FelixCraft.ai proved AI-run companies work.  
+FelixCraft.ai showed what's possible — we built the version with real ORCA Governance DNA.  
 We built the version with real governance.
 
 REAL Governance is what creates REAL agency worth having.

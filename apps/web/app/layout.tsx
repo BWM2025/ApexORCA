@@ -7,7 +7,10 @@ import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const baseUrl = process.env.NEXT_PUBLIC_URL || "https://apexorca.io";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "ApexORCA.io — Apex Intelligence for Your AI Agents",
   description: "The superior FelixCraft.ai blueprint with real ORCA Governance DNA from real orca research. Real pods. Real reliability. Real agency.",
   keywords: ["ORCA Governance", "AI Agents", "OpenClaw", "FelixCraft", "AI CEO", "ORCA DNA"],
@@ -15,6 +18,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ApexORCA.io — Apex Intelligence for Your AI Agents",
     description: "The superior FelixCraft.ai blueprint with real ORCA Governance DNA.",
+    url: baseUrl,
+    siteName: "ApexORCA.io",
     images: [{ url: "/og-image.png" }],
   },
   icons: { icon: "/favicon.ico" },

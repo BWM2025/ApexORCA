@@ -39,7 +39,7 @@ Run the updated schema in Supabase:
 
 3. **Set up webhook endpoint**:
    - Go to Stripe Dashboard → Developers → Webhooks
-   - Add endpoint: `https://your-domain.com/api/stripe/webhook`
+   - Add endpoint: `https://apexorca.io/api/stripe/webhook`
    - Select event: `checkout.session.completed`
    - Copy the webhook signing secret to `STRIPE_WEBHOOK_SECRET`
 

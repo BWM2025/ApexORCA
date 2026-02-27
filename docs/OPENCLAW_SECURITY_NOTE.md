@@ -1,5 +1,9 @@
 # OpenClaw Security — Note for ApexORCA Customers
 
+**LLM setup:** See **docs/LLM_PROVIDER_SETUP_GUIDE.md** for provider options (Grok, Claude, OpenAI, local, etc.). All agents run sandboxed by default.
+
+---
+
 ApexORCA sells **personas and skills** (files) for use with **OpenClaw**. We do **not** operate or host OpenClaw. Your security when using OpenClaw is determined by your own deployment and the OpenClaw project.
 
 ## Recommended practices

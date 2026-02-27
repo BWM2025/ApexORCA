@@ -15,6 +15,8 @@ cp -r personas/oreo ~/.openclaw/workspace/personas/ 2>/dev/null || true
 cp -r personas/fin ~/.openclaw/workspace/personas/ 2>/dev/null || true
 cp -r personas/moby ~/.openclaw/workspace/personas/ 2>/dev/null || true
 cp -r personas/sonar ~/.openclaw/workspace/personas/ 2>/dev/null || true
+cp -r personas/biggie ~/.openclaw/workspace/personas/ 2>/dev/null || true
+cp -r personas/biggie-trading ~/.openclaw/workspace/personas/ 2>/dev/null || true
 
 # Copy skills
 cp -r skills/governance-booster ~/.openclaw/workspace/skills/ 2>/dev/null || true
@@ -32,3 +34,6 @@ echo "2. Message Apex: 'Run your first HEARTBEAT and prepare founder brief'"
 echo "3. Check live dashboard: apexorca.io/dashboard"
 echo ""
 echo "Welcome to REAL Agency."
+echo ""
+echo "✅ Zero-cost LLM & WhatsApp setup complete."
+echo "Next: openclaw configure (add your LLM API key) then openclaw channels --channel whatsapp (or telegram)"

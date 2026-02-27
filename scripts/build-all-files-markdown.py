@@ -36,6 +36,8 @@ def main():
             continue
         if rel.name == OUT.name or rel.name == ".DS_Store":
             continue
+        if rel.name == ".env" or str(rel).endswith("/.env"):
+            continue
         try:
             raw = f.read_bytes()
             try:
