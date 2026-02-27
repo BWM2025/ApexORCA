@@ -5,8 +5,9 @@ export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-06-20",
 });
 
+// TEMPORARY: Test Price IDs for zero-real-money test. Switch back to Live IDs for production.
 export const priceMap: Record<string, string> = {
-  playbook:           "price_1T4ALFB7fHGes7w8j74QRRrX",
+  playbook:           "price_1T4ALFB7fHGes7w8j74QRRrX",   // test version of playbook
   "ceo-pod":          "price_1T4AN3B7fHGes7w86e1W5Khz",
   "marketing-pod":    "price_1T4AO0B7fHGes7w8WufKaSh8",
   "technical-pod":    "price_1T4AOqB7fHGes7w8OVwaSneJ",
