@@ -6,7 +6,7 @@ export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 });
 
 export const priceMap: Record<string, string> = {
-  playbook:           "price_1XXXXXXXXXXXXXXXXXXXXXXXX",   // ← TODO: Paste the real Playbook Price ID here
+  playbook:           "price_1T4ALFB7fHGes7w8j74QRRrX",
   "ceo-pod":          "price_1T4AN3B7fHGes7w86e1W5Khz",
   "marketing-pod":    "price_1T4AO0B7fHGes7w8WufKaSh8",
   "technical-pod":    "price_1T4AOqB7fHGes7w8OVwaSneJ",
