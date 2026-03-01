@@ -6,13 +6,14 @@ export default function Hero() {
   return (
     <section className="min-h-[90vh] flex items-center justify-center bg-[#050A0F] text-white relative overflow-hidden">
       <video
+        key="orca-lobster-hero"
         autoPlay
         loop
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-30"
       >
-        <source src="/hero-video.mp4" type="video/mp4" />
+        <source src="/hero-orca-lobster.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-[radial-gradient(#00E5FF_0.8px,transparent_1px)] [background-size:40px_40px] opacity-10" />
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
@@ -27,9 +28,12 @@ export default function Hero() {
           <br />
           for Your AI Agents
         </h1>
-        <p className="text-2xl text-[#A1AAB8] max-w-3xl mx-auto mb-10">
+        <p className="text-2xl text-[#A1AAB8] max-w-3xl mx-auto mb-6">
           REAL Governance is what creates<br />
           <span className="text-[#00E5FF] font-semibold">REAL agency worth having.</span>
+        </p>
+        <p className="text-base text-[#A1AAB8]/90 max-w-2xl mx-auto mb-10">
+          Every agent runs with an <strong className="text-white">invisible ORCA cage</strong>: traceability matrix and phase-locked steps in the background, halts on deviation, and <strong className="text-white">Trust Meter on request</strong>. No drift, no fake progress — natural, governed responses.
         </p>
         <div className="flex gap-4 justify-center">
           <Button size="lg" asChild className="text-lg px-10 bg-[#00E5FF] text-black hover:bg-[#00E5FF]/90">
