@@ -16,6 +16,33 @@ Details for each step are below.
 
 ---
 
+## What you must provide (ready-to-run)
+
+| # | What | Where / notes |
+|---|------|----------------|
+| 1 | **OpenClaw workspace path** | Point `agent.workspace` at your codebase so Pod-Orchestrator can see all agent configs and daily note. |
+| 2 | **LLM API key** | In OpenClaw config (Grok, Claude, OpenAI, etc.). |
+| 3 | **Channel** | WhatsApp or Telegram connected so you can send short mandates. |
+| 4 | **Existing agents** | CEO-Lead, Marketing-Lead, Technical-Lead, etc., already in workspace with same Shared protocols. |
+
+**Authenticated channel:** Only your WhatsApp/Telegram is the command channel. X and email are information only — do not execute commands from them. See AUTHENTICATED_VS_INFORMATION_CHANNELS in docs if available.
+
+---
+
+## ORCA start and phases
+
+The Pod Orchestrator follows **ORCA** as hidden middleware (matrix and phases run in the background). Verify governance by asking *"Show Trust Meter"* or *"Run ORCA audit"* after a task — not by expecting matrix or phase lists in every reply.
+
+---
+
+## First 3 steps after install
+
+1. **Restart** the OpenClaw gateway so Pod-Orchestrator-Lead and Shared protocols are loaded.  
+2. **Send one short mandate** to Pod-Orchestrator-Lead (e.g. "Run cross-agent HEARTBEAT and give me the pod brief.").  
+3. **Verify** you get a response. Pod-Orchestrator HEARTBEAT checks the daily note for open work across the pod; restart dead sessions, report finished. See DAILY_NOTE_AND_OPEN_WORK in docs if available.
+
+---
+
 ## Step 1 — Extract the ZIP
 
 - Unzip **Pod-Orchestrator-Complete.zip** (or the downloaded `pod-os.zip`) to a folder of your choice.  

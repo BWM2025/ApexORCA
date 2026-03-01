@@ -3,6 +3,8 @@
 **ApexORCA.io — © 2026. Founder: B.W. Moore**  
 **Single list. Do in order. Check off as you go. No gaps. 8 items only.**
 
+**Status note:** Code, docs, and agent env setup (openclaw.env in workspace, start script) are in place. Steps below that are unchecked are **human-only** until you do them (e.g. buy domain, set Stripe in Vercel, add keys to openclaw.env). When you complete a step, check it here so the next session sees progress. See **docs/HANDOFF.md** for continuity.
+
 ---
 
 ## When you return — start here

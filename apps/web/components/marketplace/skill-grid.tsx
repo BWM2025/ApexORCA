@@ -9,7 +9,7 @@ export default function SkillGrid() {
     .map((s) => ({ slug: s!.slug, name: s!.name, price: s!.price, description: s!.blurb }));
 
   return (
-    <div className="grid md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto min-w-0">
       {skills.map((s) => (
         <ProductCard key={s.slug} product={s} type="skill" />
       ))}

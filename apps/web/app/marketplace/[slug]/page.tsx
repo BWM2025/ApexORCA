@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import CheckoutButton from "@/components/checkout-button";
+import ProductPageBackground from "@/components/product-page-background";
 import { getProduct } from "@/lib/products";
 import Link from "next/link";
 
@@ -10,7 +11,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   if (!product) notFound();
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-20">
+    <ProductPageBackground>
+    <div className="max-w-3xl mx-auto px-6 py-10 text-white">
       <h1 className="text-5xl font-bold mb-4">{product.name}</h1>
       <div className="text-5xl font-bold text-[#00E5FF] mb-8">${product.price}</div>
 
@@ -41,5 +43,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         </Button>
       </div>
     </div>
+    </ProductPageBackground>
   );
 }

@@ -18,19 +18,14 @@ export default function RecentDecisions() {
         const res = await fetch("/api/dashboard/stats");
         const contentType = res.headers.get("content-type");
         if (!res.ok || !contentType?.includes("application/json")) {
-          setDecisions([
-            { time: "—", action: "Waiting for API", result: "—" },
-          ]);
+          setDecisions([]);
           return;
         }
         const data = await res.json();
         setDecisions(data.decisions || []);
       } catch (e) {
         console.error("Failed to fetch decisions:", e);
-        setDecisions([
-          { time: "2m ago", action: "Shipped new Governance Booster skill", result: "Approved" },
-          { time: "47m ago", action: "Updated playbook PDF with orca paper", result: "Completed" },
-        ]);
+        setDecisions([]);
       }
     };
 

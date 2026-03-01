@@ -43,6 +43,18 @@ Choose any provider above. Full setup steps are in the sections below.
 `openclaw channels --channel whatsapp` → scan QR  
 `openclaw channels --channel telegram` → scan QR
 
+## Remote LLM on iMac (Ollama — zero cost)
+
+Use an iMac (or other Mac) as a local LLM server so the pod uses zero API cost.
+
+1. **On the iMac:** Install Ollama from ollama.com. In Terminal: `ollama pull qwen2.5-coder:32b-instruct-q5_K_M` (or a smaller model if needed). Then `ollama serve` (or run Ollama app so it serves by default).
+2. **Get IP:** System Settings → Network → Wi-Fi → Details → IP (e.g. 192.168.1.x). For remote access use Tailscale and the Tailscale IP (100.x.x.x).
+3. **Keep iMac on:** Battery/Energy → prevent automatic sleeping; turn display off only if desired.
+4. **On the machine running OpenClaw:** Run `openclaw configure` (or edit config). Add provider with `baseUrl`: `http://[iMac-IP]:11434/v1`, `api`: openai-completions, `apiKey`: "" (empty). Add model id/name for the Ollama model you pulled. Set as primary. Restart gateway: `openclaw gateway stop && openclaw gateway --port 18789 &`.
+5. **Test:** Message Apex e.g. "Test local LLM: what's 2+2?" — should hit iMac, no cloud tokens.
+
+---
+
 ## Biggie Treasury Integration
 
 Biggie (Treasury Lead) uses the same LLM provider as the rest of the pod. Ensure Grok or chosen provider has Base on-chain read access for live balances when Biggie activates post-launch. **Final handoff copy:** docs/BIGGIE_HANDOFF.md; see also docs/BIGGIE_ACTIVATION_ROADMAP.md.

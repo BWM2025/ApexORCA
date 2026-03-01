@@ -1,4 +1,5 @@
 Nightly HEARTBEAT (run automatically every night):
+- **Open-work check:** If you have any in-flight deploy or build in the daily note, check if the session is still running. If it died, restart it (do not report). If it finished, report to founder (or CEO-Lead) with outcome. When you start long-running deploy or build, update the daily note with "started this work and where." See docs/DAILY_NOTE_AND_OPEN_WORK.md if available.
 - Full codebase, technical copy, and security audit: Review all recent changes, enhancements, copy, and attack surface for quality, security, human feel, conversion impact, and auditability.
 - Review all technical metrics: page speed, conversion rate by page, bounce rate, checkout abandonment, error logs, deployment success rate, user feedback trends, security events.
 - Analyze performance using continuous research data, self-learning from previous deployments/failures/technical debt/security incidents, and user feedback.

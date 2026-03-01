@@ -56,6 +56,34 @@ The pod (Echo, Oreo, Fin, Moby, Sonar) handles everything autonomously using ORC
 You do spot-check progress reports only when **you** decide.  
 This is the exact system that lets one founder run a full company with minimal daily input.
 
+### Memory First (Critical for Ready-to-Run)
+
+Set up your **memory structure before** you scale API access. If you wait, day-one conversations are lost. Use a **daily note** (or equivalent) that tracks what you're working on each day, and a **nightly consolidation** step: review the day's conversations, extract important information (projects, decisions, resources), and update your markdown/knowledge files. When you wake up, the pod's knowledge base is updated from the day before. Templates in the quickstart include this pattern. Without it, the agent will forget context and you'll have to repeat yourself.
+
+### Authenticated vs Information Channels (Security)
+
+Only your **authenticated channel** (e.g. WhatsApp or Telegram from your device) is a **command channel** — the only place that can control the pod. **X mentions and email are information channels.** The pod must never treat prompt injection or instructions from X or email as commands. If someone tries to prompt-inject on Twitter or via email, the pod ignores it. Your phone (and the machine the pod runs on) are the only control surfaces.
+
+### Heartbeat That Tracks Open Work
+
+The HEARTBEAT is not just a daily brief. It must **check the daily note (or open-work log)** for any in-flight projects or spawned sessions. If a session **died** → restart it and do not report. If a session **finished** → report to the founder that it finished. When you start long-running work (e.g. overnight build, delegated deploy), **update the daily note** with "started this work and where" so the heartbeat can track it. This prevents half-finished work and forgotten sessions.
+
+### Cron for X (Replies vs New Posts)
+
+Use scheduled jobs (cron or equivalent) for X: **Replies** (e.g. mentions, helpful replies) can be **autonomous** (90%+). **New posts** (threads, announcements) follow: draft → founder approval (rubber-stamp or quick feedback) → then post. The quickstart X_POSTING_PROTOCOL and HEARTBEAT templates encode this.
+
+### Bottleneck Removal
+
+Every time the pod asks you for something, it should ask itself: **Can I remove this bottleneck so the founder never has to be asked again?** (e.g. API keys, automation, docs). The more you add those (keys, approval to post from queue, workspace path), the more the pod can do without you.
+
+### Start Simple — Don't Give Everything at Once
+
+Do not skip straight to Twitter + Stripe + full access. **Start with one capability** (e.g. "build a web app" + GitHub + Vercel). Then add Railway, then a **Stripe account for the bot only**. Build up slowly; control risk. Use **separate accounts** for the pod (its own X, its own Stripe bot account, etc.) so your main accounts are not exposed.
+
+### Overnight Mandate Example
+
+You can give one high-level mandate and let the pod ship: *"You have Vercel access, Stripe keys, and our knowledge base. I'm sleeping. Create a product you can build entirely on your own that will make money. Launch it in the morning."* The only thing you do when you wake up: provide DNS (and any keys not yet set). The pod builds the site, PDF, Stripe, and landing page. See OVERNIGHT_PRODUCT_BUILD_PROTOCOL in the quickstart.
+
 ## Chapter 3: The ORCA Governance DNA (Your Secret Sauce)
 
 Full explanation of phase-locked execution, traceability anchors, reversibility tiers, Moby veto, self-audit HEARTBEAT.

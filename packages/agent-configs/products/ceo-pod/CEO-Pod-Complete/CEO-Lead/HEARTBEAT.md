@@ -1,5 +1,7 @@
 Nightly standardized briefing schema. Submit in this exact format (see also DAILY_REPORT_FORMAT.md).
 
+**Open-work check (do first):** Read the daily note (or open-work log) for any in-flight projects or spawned sessions. If a session died, restart it and do not report; if a session finished, report to founder with outcome. When you start long-running or delegated work (e.g. overnight build), update the daily note with "started this work and where" so the next heartbeat can track. See docs/DAILY_NOTE_AND_OPEN_WORK.md if available.
+
 **CEO-LEAD DAILY BRIEF — [DATE]**
 
 - **METRICS**: [revenue 7d / 30d / lifetime] [traffic] [conversion rate] (or role-specific KPIs)

@@ -4,9 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function LiveRevenue() {
   const [stats, setStats] = useState({
-    sevenDay: 12450,
-    thirtyDay: 38920,
-    lifetime: 124560,
+    sevenDay: 0,
+    thirtyDay: 0,
+    lifetime: 0,
   });
 
   useEffect(() => {
@@ -41,6 +41,7 @@ export default function LiveRevenue() {
     <Card>
       <CardHeader>
         <CardTitle>Live Revenue (USD)</CardTitle>
+        <p className="text-xs text-muted-foreground mt-1">Stripe revenue only — does not include crypto.</p>
       </CardHeader>
       <CardContent className="grid grid-cols-3 gap-8 text-center">
         <div>

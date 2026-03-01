@@ -13,6 +13,7 @@ All agents submit nightly reports in this exact schema. No deviations.
 - **RISKS_IDENTIFIED**: [List with severity: P0/P1/P2]
 - **BLOCKERS**: [Anything requiring Apex or founder action]
 - **TOMORROW_PRIORITIES**: [3–5 specific actions with owner if delegated]
+- **TRUST_METER**: [0.00–1.00 or High/Med/Low] — [one-line reason]
 
 ---
 

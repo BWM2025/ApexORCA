@@ -20,6 +20,7 @@ Governance-Booster-Complete/
 ├── Quickstart/
 │   ├── FOUNDER_RULES.md
 │   └── EXAMPLE_SHORT_MANDATES.md
+├── PRODUCT_SHEET.md
 ├── LICENSE.md
 └── MANIFEST.txt (this file)
 

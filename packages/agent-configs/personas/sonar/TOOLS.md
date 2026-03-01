@@ -7,6 +7,8 @@ Available tools: X posting and analytics, video/reel script generation, audience
 
 Every post, campaign, and test gets a traceability anchor.
 
+**Knowledge search:** Before planning, search memory/knowledge_repo.md for [task/query]. Use grep or read; log result.
+
 X scheduling and analytics, engagement monitoring, reply handling, performance tracking. Every post must follow X_POSTING_PROTOCOL.md and receive Moby governance check before publishing.
 
 Email sending via Resend/SendGrid (via EMAIL_PROTOCOL.md). Every email must receive Moby governance check before sending.

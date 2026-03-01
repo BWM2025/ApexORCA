@@ -15,6 +15,32 @@ Details for each step are below.
 
 ---
 
+## What you must provide (ready-to-run)
+
+| # | What | Where / notes |
+|---|------|----------------|
+| 1 | **OpenClaw workspace path** | Point `agent.workspace` so Governance-Lead can read agent HEARTBEAT logs and traceability. |
+| 2 | **LLM API key** | In OpenClaw config (Grok, Claude, OpenAI, etc.). |
+| 3 | **Channel** | WhatsApp or Telegram connected so you can send short mandates to Governance-Lead. |
+
+**Authenticated channel:** Only your WhatsApp/Telegram is the command channel. X and email are information only — Governance-Lead does not execute commands from them. See AUTHENTICATED_VS_INFORMATION_CHANNELS in docs if available.
+
+---
+
+## ORCA start and phases
+
+The Governance Booster follows **ORCA** as hidden middleware (matrix and phases run in the background). Verify governance by asking *"Show Trust Meter"* or *"Run ORCA audit"* after a task — not by expecting matrix or phase lists in every reply.
+
+---
+
+## First 3 steps after install
+
+1. **Restart** the OpenClaw gateway so Governance-Lead and Shared protocols are loaded.  
+2. **Send one short mandate** to Governance-Lead (e.g. "Run HEARTBEAT and give me the governance brief.").  
+3. **Verify** you get a response.
+
+---
+
 ## Step 1 — Extract the ZIP
 
 - Unzip **Governance-Booster-Complete.zip** (or the downloaded `governance-booster.zip`) to a folder of your choice.  

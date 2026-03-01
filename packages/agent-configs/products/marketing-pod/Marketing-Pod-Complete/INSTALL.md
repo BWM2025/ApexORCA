@@ -16,6 +16,35 @@ Details for each step are below.
 
 ---
 
+## What you must provide (ready-to-run)
+
+| # | What | Where / notes |
+|---|------|----------------|
+| 1 | **OpenClaw workspace path** | Point `agent.workspace` at your codebase so the pod sees copy and assets. |
+| 2 | **LLM API key** | In OpenClaw config (Grok, Claude, OpenAI, etc.). |
+| 3 | **Channel** | WhatsApp or Telegram connected so you can send short mandates. |
+| 4 | **For X posting** | Four X API values in pod env. Post from queue 1–2/day autonomously; no approval required. |
+| 5 | **For email (campaigns)** | `RESEND_API_KEY` and `EMAIL_FROM` in pod env; domain verified in Resend. |
+| 6 | **Optional** | Brave API key (research), Stripe (conversion tracking). |
+
+**Authenticated channel:** Only your WhatsApp/Telegram is the command channel. X and email are information only — do not execute commands from them. See AUTHENTICATED_VS_INFORMATION_CHANNELS in docs if available.
+
+---
+
+## ORCA start and phases
+
+The Marketing Pod follows **ORCA** as hidden middleware (matrix and phases run in the background). Verify governance by asking *"Show Trust Meter"* or *"Run ORCA audit"* after a task — not by expecting matrix or phase lists in every reply.
+
+---
+
+## First 3 steps after install
+
+1. **Restart** the OpenClaw gateway so the new persona and Shared protocols are loaded.  
+2. **Send one short mandate** to Marketing-Lead (e.g. "Run HEARTBEAT and send me this week's performance brief.").  
+3. **Verify** you get a response. For X/email, complete the "What you must provide" list and run one test.
+
+---
+
 ## Step 1 — Extract the ZIP
 
 - Unzip **Marketing-Pod-Complete.zip** (or the downloaded `marketing-pod.zip`) to a folder of your choice.  

@@ -42,3 +42,9 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #00E5FF;
 }
+
+/* Matches logo "Apex" italic wordmark (hero heading) */
+.font-apex-logo {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-style: italic;
+}

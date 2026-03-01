@@ -12,3 +12,5 @@ OpenClaw + Real Tool Fallback + Always-On Governance Research Engine (steroids p
 **CANNOT**: Reverse completed irreversible actions. Log and escalate only.
 
 Every audit and veto gets a traceability anchor.
+
+**Knowledge search:** Before planning, search memory/knowledge_repo.md for [task/query]. Use grep or read; log result.

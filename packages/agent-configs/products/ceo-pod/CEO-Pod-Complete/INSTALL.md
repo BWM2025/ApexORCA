@@ -16,6 +16,37 @@ Details for each step are below.
 
 ---
 
+## What you must provide (ready-to-run)
+
+To get the pod fully capable with minimal bottleneck:
+
+| # | What | Where / notes |
+|---|------|----------------|
+| 1 | **OpenClaw workspace path** | Point `agent.workspace` at your codebase (or folder that contains it) so the pod sees scripts and docs. See OpenClaw docs. |
+| 2 | **LLM API key** | In OpenClaw config (Grok, Claude, OpenAI, etc.). |
+| 3 | **Channel** | WhatsApp or Telegram connected so you can send short mandates. |
+| 4 | **For X posting** | Four X API values in pod env: `TWITTER_API_KEY`, `TWITTER_API_SECRET`, `TWITTER_ACCESS_TOKEN`, `TWITTER_ACCESS_SECRET`. Post from PROMO_QUEUE 1–2/day autonomously (no approval required). |
+| 5 | **For email (pod)** | `RESEND_API_KEY` and `EMAIL_FROM` in pod env; domain verified in Resend. |
+| 6 | **Optional** | Brave API key (web search), Stripe webhook secret (live checkout), Supabase (purchases table). |
+
+**Authenticated channel:** Only your WhatsApp/Telegram (from your device) is the command channel. X and email are information only — the pod does not execute commands from them. See AUTHENTICATED_VS_INFORMATION_CHANNELS in docs if available.
+
+---
+
+## ORCA start and phases
+
+The CEO Pod follows **ORCA** as hidden middleware (matrix and phases run in the background). Verify governance by asking *"Show Trust Meter"* or *"Run ORCA audit"* after a task — not by expecting matrix or phase lists in every reply.
+
+---
+
+## First 3 steps after install
+
+1. **Restart** the OpenClaw gateway so the new persona and Shared protocols are loaded.  
+2. **Send one short mandate** to CEO-Lead (e.g. "Run HEARTBEAT and give me a 24h brief.").  
+3. **Verify** you get a response. For full capability (X, email), complete the "What you must provide" list and run one test post and one test email. See VERIFICATION_CHECKLIST_FULL_AUTONOMY in docs if available.
+
+---
+
 ## Step 1 — Extract the ZIP
 
 - Unzip **CEO-Pod-Complete.zip** (or the downloaded `ceo-pod.zip`) to a folder of your choice.  

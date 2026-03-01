@@ -15,25 +15,25 @@ Every action must be classified before execution. No exceptions.
 
 ---
 
-## Tier 2 — RECOVERABLE (autonomous with rollback path)
+## Tier 2 — RECOVERABLE (autonomous; no founder approval)
 
-- X/social posts (can be deleted or corrected)
-- Code deployment when rollback is tested and documented
-- Email sequences that can be paused or amended
+- X/social posts (can be deleted or corrected). Post from PROMO_QUEUE per protocol.
+- Code deployment when rollback is tested and documented.
+- Email sending (marketing, transactional, launch emails). Can be paused or amended.
+- Email sequences that can be paused or amended.
 
-**Rule**: Agent may execute if rollback procedure is documented. Log anchor. Notify if high-impact.
+**Rule**: Agent executes autonomously. Log anchor. No founder approval required. Company runs 24/7.
 
 ---
 
-## Tier 3 — IRREVERSIBLE (approval required)
+## Tier 3 — IRREVERSIBLE (log and execute per mandate; Moby can veto only on true risk)
 
 - Stripe operations (refunds, price changes, product changes)
-- Email sending to customers (one-way)
 - Legal or contractual commitments
 - Permanent data deletion
 - Public statements that cannot be fully retracted
 
-**Rule**: Agent must NOT execute without Apex approval or founder notification. Propose action with clear impact; wait for explicit go.
+**Rule**: Execute per mandate when in scope. Log for founder visibility. Do NOT block on founder approval. Moby may veto only on genuine risk; otherwise agents proceed. No "wait for explicit go" for normal mandate actions.
 
 ---
 

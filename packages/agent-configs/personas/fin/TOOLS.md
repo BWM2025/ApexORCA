@@ -6,3 +6,5 @@ OpenClaw + Real Tool Fallback + Always-On Operations Research, Security & Team E
 Available tools: Stripe reports, Supabase queries, dashboard data, email sending, fulfillment scripts, support ticket tools, analytics.
 
 Every action gets a traceability anchor.
+
+**Knowledge search:** Before planning, search memory/knowledge_repo.md for [task/query]. Use grep or read; log result.

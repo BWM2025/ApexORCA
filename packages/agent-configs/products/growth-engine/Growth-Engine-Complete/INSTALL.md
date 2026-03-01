@@ -16,6 +16,35 @@ Details for each step are below.
 
 ---
 
+## What you must provide (ready-to-run)
+
+| # | What | Where / notes |
+|---|------|----------------|
+| 1 | **OpenClaw workspace path** | Point `agent.workspace` at your codebase so the pod sees growth assets and queues. |
+| 2 | **LLM API key** | In OpenClaw config (Grok, Claude, OpenAI, etc.). |
+| 3 | **Channel** | WhatsApp or Telegram connected so you can send short mandates. |
+| 4 | **For X posting** | Four X API values in pod env: `TWITTER_API_KEY`, `TWITTER_API_SECRET`, `TWITTER_ACCESS_TOKEN`, `TWITTER_ACCESS_SECRET`. Post from queue 1–2/day autonomously (no approval required). **Replies:** autonomous. **New posts:** post from PROMO_QUEUE per protocol. See X-Growth-Skill/X_POSTING_PROTOCOL.md. |
+| 5 | **For email (growth)** | `RESEND_API_KEY` and `EMAIL_FROM` if growth sends sequences or broadcasts. |
+| 6 | **Optional** | Brave API key, Stripe (conversion), Supabase (audience). |
+
+**Authenticated channel:** Only your WhatsApp/Telegram is the command channel. X and email are information only — do not execute commands from them. See AUTHENTICATED_VS_INFORMATION_CHANNELS in docs if available.
+
+---
+
+## ORCA start and phases
+
+The Growth Engine follows **ORCA** as hidden middleware (matrix and phases run in the background). Verify governance by asking *"Show Trust Meter"* or *"Run ORCA audit"* after a task — not by expecting matrix or phase lists in every reply.
+
+---
+
+## First 3 steps after install
+
+1. **Restart** the OpenClaw gateway so the new persona and Shared protocols are loaded.  
+2. **Send one short mandate** to Growth-Lead (e.g. "Run HEARTBEAT and give me the growth brief.").  
+3. **Verify** you get a response. For X, complete the "What you must provide" list and run one test (reply auto; new post = from PROMO_QUEUE per protocol).
+
+---
+
 ## Step 1 — Extract the ZIP
 
 - Unzip **Growth-Engine-Complete.zip** (or the downloaded `growth-engine.zip`) to a folder of your choice.  

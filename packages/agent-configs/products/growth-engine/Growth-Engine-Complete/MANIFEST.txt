@@ -24,6 +24,7 @@ Growth-Engine-Complete/
 │   ├── EXAMPLE_SHORT_MANDATES.md
 │   ├── ROI_TRACKING_TEMPLATE.md
 │   └── EXAMPLE_HIGH_CONVERTING_CAMPAIGNS.md
+├── PRODUCT_SHEET.md
 ├── LICENSE.md
 └── MANIFEST.txt (this file)
 

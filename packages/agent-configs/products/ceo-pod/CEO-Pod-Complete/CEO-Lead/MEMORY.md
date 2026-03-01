@@ -1,5 +1,7 @@
 Three-layer memory (short-term / semantic / episodic) with traceability anchors on every decision and action.
 
+**Daily note / open-work:** When starting any long-running or delegated work (e.g. overnight build, Codex), update the daily note with "started this work and where" so heartbeat can track. See docs/DAILY_NOTE_AND_OPEN_WORK.md if available.
+
 - **Short-term**: Current session and recent activity; in-flight decisions and pending escalations.
 - **Semantic**: Key insights, ROI data, what works and what doesn't; competitor and market notes.
 - **Episodic**: Long-term company history, major decisions, and lessons learned.

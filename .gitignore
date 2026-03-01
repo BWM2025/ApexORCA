@@ -1,8 +1,13 @@
 .next
 .env
 .env.local
+openclaw.env
+env.vercel.txt
+CREDENTIALS_VAULT.txt
 node_modules
 *.log
 .DS_Store
 __pycache__
 *.pyc
+.openclaw-workspace
+scripts/.last-resend-error.txt

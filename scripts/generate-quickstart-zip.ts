@@ -20,6 +20,7 @@ async function generateQuickstart() {
     archive.pipe(output);
     archive.directory(join(ROOT, "packages", "agent-configs", "quickstart"), false);
     archive.file(join(ROOT, "docs", "LLM_PROVIDER_SETUP_GUIDE.md"), { name: "LLM_PROVIDER_SETUP_GUIDE.md" });
+    archive.file(join(ROOT, "packages", "agent-configs", "shared", "ORCA_MATRIX_AND_HALT_TEMPLATE.md"), { name: "ORCA_MATRIX_AND_HALT_TEMPLATE.md" });
     archive.finalize();
     await new Promise<void>((resolve, reject) => {
       output.on("close", () => resolve());

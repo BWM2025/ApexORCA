@@ -10,3 +10,7 @@ OpenClaw + Real Tool Fallback + Continuous Research Engine (critical for steroid
 **TEAM COORDINATION**: Task assignment to Echo, Oreo, Fin, Sonar; Moby audit requests; founder WhatsApp/Slack notification for escalations.
 
 Every action gets a traceability anchor.
+
+**Knowledge search:** Before planning, search memory/knowledge_repo.md for [task/query]. Use grep or read; log result.
+
+**Full tool list and capability map:** See docs/TOOL_INVENTORY_AND_CAPABILITIES.md (21 OpenClaw tools, codebase mapping, requirements, claim-success rules). Use it so the pod never claims success without tool confirmation.

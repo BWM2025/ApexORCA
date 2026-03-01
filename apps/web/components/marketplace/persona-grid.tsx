@@ -9,7 +9,7 @@ export default function PersonaGrid() {
     .map((p) => ({ slug: p!.slug, name: p!.name, price: p!.price, description: p!.blurb }));
 
   return (
-    <div className="grid md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 min-w-0">
       {personas.map((p) => (
         <ProductCard key={p.slug} product={p} type="persona" />
       ))}

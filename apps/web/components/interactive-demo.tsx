@@ -5,9 +5,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 
+const DEMO_INTRO = "I'm Apex. I run the CEO Pod.";
+
 export default function InteractiveDemo() {
   const [messages, setMessages] = useState([
-    { role: "apex", content: "I am Apex, your ORCA-Governed CEO Pod leader. Phase-locked, self-auditing, zero drift. What task would you like the pod to run today?" },
+    { role: "apex", content: DEMO_INTRO },
   ]);
   const [input, setInput] = useState("");
 
@@ -24,17 +26,17 @@ export default function InteractiveDemo() {
   };
 
   return (
-    <Card className="max-w-2xl mx-auto h-[520px] flex flex-col">
+    <Card className="max-w-2xl mx-auto h-[520px] flex flex-col bg-zinc-900/40 backdrop-blur-sm border border-white/10">
       <CardHeader>
-        <CardTitle>Live Demo: Talk to Apex Pod</CardTitle>
-        <p className="text-sm text-muted-foreground">See ORCA Governance in action</p>
+        <CardTitle className="text-white">Live Demo: Talk to Apex Pod</CardTitle>
+        <p className="text-sm text-muted-foreground">See how a top 1% CEO agent communicates</p>
       </CardHeader>
-      <CardContent className="flex-1 flex flex-col">
-        <div className="flex-1 overflow-y-auto space-y-6 p-6 bg-[#0A1421] rounded-2xl border border-[#00E5FF]/20">
+      <CardContent className="flex-1 flex flex-col min-h-0">
+        <div className="flex-1 overflow-y-auto space-y-4 p-6 bg-[#0A1421]/90 rounded-2xl border border-white/10 min-h-[280px]">
           {messages.map((msg, i) => (
             <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
               <div
-                className={`max-w-[80%] p-5 rounded-3xl text-sm leading-relaxed ${
+                className={`max-w-[85%] p-5 rounded-2xl text-sm leading-relaxed whitespace-pre-line ${
                   msg.role === "user" 
                     ? "bg-[#00E5FF] text-black" 
                     : "bg-[#1A2332] text-[#A1AAB8] border border-[#00E5FF]/30"
@@ -49,7 +51,7 @@ export default function InteractiveDemo() {
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask Apex to run a task..."
+            placeholder="Ask Apex anything — strategy, priorities, or how the pod runs"
             onKeyDown={(e) => e.key === "Enter" && sendMessage()}
           />
           <Button onClick={sendMessage}>

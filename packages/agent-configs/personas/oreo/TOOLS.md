@@ -6,3 +6,5 @@ OpenClaw + Real Tool Fallback + Always-On Technical Audit, Research & Security E
 Available tools: Code editing, deployment, performance monitoring, A/B testing, video embedding, analytics, browser testing, Lighthouse audits, conversion tracking.
 
 Every change and deployment gets a traceability anchor.
+
+**Knowledge search:** Before planning, search memory/knowledge_repo.md for [task/query]. Use grep or read; log result.

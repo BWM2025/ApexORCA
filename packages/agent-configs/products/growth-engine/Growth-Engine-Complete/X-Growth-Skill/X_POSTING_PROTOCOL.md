@@ -1,5 +1,9 @@
 # X_POSTING_PROTOCOL.md — Growth-Lead Autonomous Posting
 
+**Replies vs new posts (Felix-style)**  
+- **Replies:** Autonomous. Check mentions and replies on schedule; post helpful, on-brand replies (e.g. 90%+ without founder approval).  
+- **New posts:** Post from PROMO_QUEUE 1–2/day per protocol (autonomous; no approval required). Use cron/scheduled jobs for reply checks and "draft new post" runs if available.
+
 **Ownership**  
 Growth-Lead owns all X posting, scheduling, timing optimization, engagement monitoring, reply handling, and growth mechanics. Content is provided by Marketing-Lead (or content lead) or founder. Growth-Lead never writes the message — only distributes and optimizes timing/format. See content/distribution boundary: Growth-Lead does not alter brand voice or message.
 
