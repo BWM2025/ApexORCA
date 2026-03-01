@@ -10,10 +10,12 @@ export const dynamic = "force-dynamic";
 
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!;
 
-const supabase = createClient(
-  process.env.SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+function getSupabase() {
+  const url = process.env.SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) return null;
+  return createClient(url, key);
+}
 
 export async function POST(req: Request) {
   const body = await req.text();
@@ -44,23 +46,26 @@ export async function POST(req: Request) {
 
     console.log(`Payment successful for ${productId} — session ${sessionId}`);
 
-    // Save directly to database (no HTTP call needed)
-    const { error } = await supabase.from("purchases").insert({
-      product_id: productId,
-      user_email: userEmail,
-      session_id: sessionId,
-      amount: amount,
-    });
+    // Save directly to database (no HTTP call needed) — client created at runtime so build never needs env
+    const supabase = getSupabase();
+    if (supabase) {
+      const { error } = await supabase.from("purchases").insert({
+        product_id: productId,
+        user_email: userEmail,
+        session_id: sessionId,
+        amount: amount,
+      });
 
-    if (error) {
-      if (error.code === "23505") {
-        // Unique violation (session_id): duplicate webhook event — idempotent, treat as success
-        console.log("Purchase already recorded for session", sessionId);
+      if (error) {
+        if (error.code === "23505") {
+          // Unique violation (session_id): duplicate webhook event — idempotent, treat as success
+          console.log("Purchase already recorded for session", sessionId);
+        } else {
+          console.error("Failed to record purchase:", error);
+        }
       } else {
-        console.error("Failed to record purchase:", error);
+        console.log("Purchase recorded successfully");
       }
-    } else {
-      console.log("Purchase recorded successfully");
     }
 
     // Send purchase confirmation email with download links when Resend is configured
