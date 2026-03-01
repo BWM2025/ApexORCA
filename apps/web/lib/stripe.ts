@@ -28,13 +28,15 @@ export async function createCheckoutSession(productId: string) {
   if (!priceId) {
     throw new Error(`No Stripe Price ID for product "${productId}". Add it to priceMap in lib/stripe.ts.`);
   }
+  const isDev = process.env.NODE_ENV !== "production";
   const baseUrl =
     process.env.NEXT_PUBLIC_URL ||
-    (process.env.NODE_ENV === "production" ? "" : "http://localhost:3000");
+    (isDev ? "http://localhost:3000" : "");
   if (!baseUrl) {
     throw new Error("NEXT_PUBLIC_URL must be set to your site URL (e.g. https://apexorca.io) in Vercel env.");
   }
-  if (process.env.NODE_ENV === "production" && !baseUrl.startsWith("https://")) {
+  const isLocalhost = baseUrl.includes("localhost") || baseUrl.startsWith("http://127.");
+  if (!isDev && !isLocalhost && !baseUrl.startsWith("https://")) {
     throw new Error("NEXT_PUBLIC_URL must be https:// in production (e.g. https://apexorca.io).");
   }
   const session = await stripe.checkout.sessions.create({
