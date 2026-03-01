@@ -3,6 +3,10 @@ import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
+import { isEmailConfigured, sendPurchaseEmail } from "@/lib/email";
+import { getProduct } from "@/lib/products";
+
+export const dynamic = "force-dynamic";
 
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!;
 
@@ -57,6 +61,23 @@ export async function POST(req: Request) {
       }
     } else {
       console.log("Purchase recorded successfully");
+    }
+
+    // Send purchase confirmation email with download links when Resend is configured
+    if (isEmailConfigured()) {
+      try {
+        const product = getProduct(productId);
+        const result = await sendPurchaseEmail({
+          to: userEmail,
+          productId,
+          productName: product?.name,
+        });
+        if (!result.ok) {
+          console.warn("[webhook] Purchase email not sent:", result.error);
+        }
+      } catch (emailErr) {
+        console.warn("[webhook] Purchase email error:", emailErr);
+      }
     }
   }
 

@@ -1,5 +1,7 @@
 import { getTreasuryBalance } from "@/lib/base";
 
+export const dynamic = "force-dynamic";
+
 /** Set TREASURY_ADDRESS (or NEXT_PUBLIC_TREASURY_ADDRESS) in env when Biggie activates post-launch. */
 const TREASURY_ADDRESS = process.env.TREASURY_ADDRESS || process.env.NEXT_PUBLIC_TREASURY_ADDRESS;
 

@@ -2,6 +2,8 @@ import { stripe } from "@/lib/stripe";
 import { getDownloadLinks } from "@/lib/downloads";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 /**
  * GET /api/downloads?session_id=cs_...
  * Returns download links for the product just purchased.
