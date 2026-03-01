@@ -1,8 +1,8 @@
 import LiveRevenue from "@/components/dashboard/live-revenue";
-import TreasuryCard from "@/components/dashboard/treasury-card";
-import BiggieTreasury from "@/components/dashboard/biggie-treasury";
 import RecentDecisions from "@/components/dashboard/recent-decisions";
 import RevenueChart from "@/components/dashboard/revenue-chart";
+
+export const dynamic = "force-dynamic";
 
 export default function DashboardPage() {
   return (
@@ -13,7 +13,10 @@ export default function DashboardPage() {
           Apex Pod running ApexORCA.io autonomously
         </p>
         <p className="text-sm text-[#00E5FF] mt-2">
-          Every decision traceable • Real-time transparency
+          Real sales only • Every decision traceable
+        </p>
+        <p className="text-xs text-muted-foreground mt-1">
+          Stripe revenue only — does not include crypto.
         </p>
       </div>
       <div className="grid md:grid-cols-12 gap-6">
@@ -21,9 +24,7 @@ export default function DashboardPage() {
           <RevenueChart />
           <LiveRevenue />
         </div>
-        <div className="md:col-span-4 space-y-6">
-          <TreasuryCard />
-          <BiggieTreasury />
+        <div className="md:col-span-4">
           <RecentDecisions />
         </div>
       </div>
